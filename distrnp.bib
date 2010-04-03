@@ -1,0 +1,110 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for John Daigle at 2010-04-03 00:28:33 -0400 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@inproceedings{1011811,
+	Abstract = { We give time lower bounds for the distributed approximation of minimum vertex cover (MVC) and related problems such as minimum dominating set (MDS). In k communication rounds, MVC and MDS can only be approximated by factors Ω(nc/k2/k) and Ω(Δ>1/k/k) for some constant c, where n and Δ denote the number of nodes and the largest degree in the graph. The number of rounds required in order to achieve a constant or even only a polylogarithmic approximation ratio is at least Ω(√log n/log log n) and Ω(logΔ/ log log Δ). By a simple reduction, the latter lower bounds also hold for the construction of maximal matchings and maximal independent sets. },
+	Address = {New York, NY, USA},
+	Annote = {The authors prove polylogarithmic lower bounds for any distributed solution to either the minimum vertex cover, minimum dominating set, or maximal matching problems. These bounds are non-constant whether the result is dependent on the number of nodes in the graph or the degree of the graph. Specifically, when analyzed by $n$, the running time and approximation result are polylogarithmic in $n$, and when analyzed by $\Delta$, the results are polylogarithmic in $\Delta$.
+
+The proof depends on a specific graph structure that defeats any possible distributed algorithm for any of these problems by ensuring that, while the local view of the graph is identical to two given nodes, the result of adding one of these nodes is drastically different than the result of adding another. The proof is rigorous, and makes up the bulk of the paper.
+
+ An open question is whether there are specific graph structures for which this is not true, and constant time approximations for these problems can be found.},
+	Author = {Kuhn, Fabian and Moscibroda, Thomas and Wattenhofer, Roger},
+	Booktitle = {PODC '04: Proceedings of the twenty-third annual ACM symposium on Principles of distributed computing},
+	Date-Added = {2010-04-03 00:16:36 -0400},
+	Date-Modified = {2010-04-03 00:16:36 -0400},
+	Doi = {http://doi.acm.org/10.1145/1011767.1011811},
+	Isbn = {1-58113-802-4},
+	Keywords = {approximation hardness, distributed algorithms, dominating set, locality, lower bounds, maximal independent set, maximal matching, vertex cover},
+	Location = {St. John's, Newfoundland, Canada},
+	Pages = {300--309},
+	Publisher = {ACM},
+	Title = {What cannot be computed locally!},
+	Year = {2004},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYIAAAAAAYIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ1wMzAwLWt1aG4ucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXwhxv0ozAAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxv1hDAAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA2TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMzAwLWt1aG4ucGRmAA4AHAANAHAAMwAwADAALQBrAHUAaABuAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgApVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3AzMDAta3Vobi5wZGYAABMAAS8AABUAAgAL//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfECouLi8uLi8uLi8uLi9Eb2N1bWVudHMvQmlibGlvL3AzMDAta3Vobi5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACJgIoAi0CNgJBAkUCUwJaAmMCkAKVApgCpQKqAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAArw=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1011767.1011811}}
+
+@inproceedings{1378540,
+	Abstract = {Whether local algorithms can compute constant approximations of NP-hard problems is of both practical and theoretical interest. So far, no algorithms achieving this goal are known, as either the approximation ratio or the running time exceed O(1), or the nodes are provided with non-trivial additional information. In this paper, we present the first distributed algorithm approximating a minimum dominating set on a planar graph within a constant factor in constant time. Moreover, the nodes do not need any additional information.},
+	Address = {New York, NY, USA},
+	Annote = {Lenzen, Oswald, and Wattenhofer present a local algorithm that solves the Minimum Dominating Set problem on planar graphs. The Approximation ratio given for the algorithm is 74. However, no other constant local approximation of this problem for planar graphs had been found at the time of publication.
+
+The proof of correctness and locality is quite rigorous and makes up the bulk of the paper. The algorithm as presented is linear but is trivially distributable. Essentially, each node elects a neighbor to join the DS, then if some node has more than a constant number of neighbors in the DS, it joins the DS and tells its neighbors to leave the set. These steps are repeated once, and then any uncovered nodes choose a neighbor to join the set.
+
+Open questions are whether this algorithm could be improved upon in planar graphs or modified for another class of graphs. Some limitations on local approximation are discussed.},
+	Author = {Lenzen, Christoph and Oswald, Yvonne Anne and Wattenhofer, Roger},
+	Booktitle = {SPAA '08: Proceedings of the twentieth annual symposium on Parallelism in algorithms and architectures},
+	Date-Added = {2010-04-03 00:16:36 -0400},
+	Date-Modified = {2010-04-03 00:16:36 -0400},
+	Doi = {http://doi.acm.org/10.1145/1378533.1378540},
+	Isbn = {978-1-59593-973-9},
+	Keywords = {approximation, distributed algorithms, dominating sets, local algorithms, planar graphs},
+	Location = {Munich, Germany},
+	Pages = {46--54},
+	Publisher = {ACM},
+	Title = {What can be approximated locally?: case study: dominating sets in planar graphs},
+	Year = {2008},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYYAAAAAAYYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ5wNDYtbGVuemVuLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM2+vxv0s+lBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxv1lOgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA3TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwNDYtbGVuemVuLnBkZgAADgAeAA4AcAA0ADYALQBsAGUAbgB6AGUAbgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9wNDYtbGVuemVuLnBkZgATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxArLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wNDYtbGVuemVuLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIqAiwCMQI6AkUCSQJXAl4CZwKVApoCnQKqAq8AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACwQ==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1378533.1378540}}
+
+@inproceedings{1640702,
+	Abstract = {Energy consumption in monitoring and communication protocols for wireless sensor networks became one of the most important performance objective. We assume a commonly accepted sensor network model in which sensors can interchange idle and active modes both for monitoring and communicating. We introduce a reliability requirement for distributed target-monitoring protocols and prove that previously considered protocols (P. Berman et al., 2004) are reliable. In this paper we propose a new deterministic energy-efficient protocol for sensor networks (DEEPS) aimed at prolonging the lifetime. We prove that DEEPS is reliable and compare DEEPS with several known target-monitoring protocols in NS2 environment using LEACH (W. Heizelman et al., 2002) protocol for data delivery to the base. We implemented the full-fledged simulation of the monitoring protocols on NS2 combined with LEACH as a communication protocol, and performed extensive experimental study of several protocols showing almost 2 times increase in the lifetime for DEEPS over known protocols},
+	Annote = {Brinza and Zelikovsky present a simple protocol (DEEPS) for extending network lifetime in a sensor network while maintaining target coverage. They show that the protocal is reliable, in that while it is possible to maintain coverage, the network will maintain coverage. They also compare their algorithm to previous work with simulation using NS2.
+
+DEEPS essentially uses 1 set up rule and two behavior rules. The setup rule places a sensor in charge of each target. The first behavior rule is that a sensor that is the only sensor covering a target will always switch itself on, the second is that a sensor that is in charge of a target will remain on until some other sensor covers its target. In simulation DEEPS outperforms a prior protocol (LBP).},
+	Author = {Brinza, D. and Zelikovsky, A.},
+	Date-Added = {2010-04-03 00:15:58 -0400},
+	Date-Modified = {2010-04-03 00:15:58 -0400},
+	Doi = {10.1109/SNPD-SAWN.2006.31},
+	Journal = {Software Engineering, Artificial Intelligence, Networking, and Parallel/Distributed Computing, 2006. SNPD 2006. Seventh ACIS International Conference on},
+	Keywords = {LEACH protocol;NS2 environment;communication protocols;data delivery;deterministic energy-efficient protocol;distributed target-monitoring protocols;energy consumption;monitoring protocols;reliability requirement;wireless sensor networks;protocols;wireless sensor networks;},
+	Month = {june},
+	Pages = {261 -266},
+	Title = {DEEPS: Deterministic Energy-Efficient Protocol for Sensor networks},
+	Year = {2006},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXoAAAAAAXoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQsxNjQwNzAyLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM2b6x9wMCQAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAx9xESQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA0TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzoxNjQwNzAyLnBkZgAOABgACwAxADYANAAwADcAMAAyAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAnVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvLzE2NDA3MDIucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAoLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby8xNjQwNzAyLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIeAiACJQIuAjkCPQJLAlICWwKGAosCjgKbAqAAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACsg==},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/SNPD-SAWN.2006.31}}
+
+@inproceedings{978-3-540-77220-0_36,
+	Abstract = {We present a new set of distributed algorithms for scheduling sensors to enhance the total lifetime of a wireless sensor network. These algorithms are based on constructing minimal cover sets each consisting of one or more sensors which can collectively cover the local targets.  Some of the covers are heuristically better than others for a sensor trying to decide its own sense-sleep status.  This leads to various ways to assign priorities to the covers. The algorithms work by having each sensor transition through these possible prioritized cover sets, settling for the best cover it can negotiate with its neighbors.   A local lifetime dependency graph consisting of the cover sets as nodes with any two nodes connected if the corresponding covers intersect captures the interdependencies among the covers. We present several variations of the basic algorithmic framework.  The priority function of a cover is derived from its degree or connectedness in the dependency graph - usually lower the better.  Lifetime improvement is 10% to 20% over the existing algorithms, while maintaining comparable communication overheads.   We also show how previous algorithms can be formulated within our framework. },
+	Annote = {Prasad and Dhawan present a new distributed algorithm for the network lifetime problem in wireless sensor networks. This algorithm is based on local network nodes creating an exhaustive set of possible covers over their own targets, ordering those covers, and then turning off or on based on whether they are a member of the highest priority cover. The authors maintain that although the number of possible covers is exponential, this exponential number can be viewed as a constant for realistically sparse networks. 
+
+A key concept in this paper is the idea of the Lifetime Dependency graph, a method of comparing covers in which each cover is a node in the graph, each shared sensors between nodes constitue an edge of the graph, and covers can be ordered by comparing the cumulative minimun lifetimes of the edges.
+
+Simulation results show that this approach is an improvement on prior work. },
+	Author = {Sushil K. Prasad and Akshaye Dhawan},
+	Booktitle = {Procs. Intl High Performance Computing (HiPC)},
+	Date-Added = {2010-04-03 00:15:24 -0400},
+	Date-Modified = {2010-04-03 00:17:12 -0400},
+	Keywords = {distributed algorithms, distributed target-monitoring protocols},
+	Organization = {HiPC},
+	Pages = {381-392},
+	Series = {LNCS},
+	Title = {Distributed Algorithms for Lifetime of Wireless Sensor Networks based on Dependency Structure among Cover Sets},
+	Volume = {4873},
+	Year = {2007},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYIAAAAAAYIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ0xNjExLTMzNDkucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM10Jxr43NVBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxr5vdQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA2TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzoxNjExLTMzNDkucGRmAA4AHAANADEANgAxADEALQAzADMANAA5AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgApVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvLzE2MTEtMzM0OS5wZGYAABMAAS8AABUAAgAL//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfECouLi8uLi8uLi8uLi9Eb2N1bWVudHMvQmlibGlvLzE2MTEtMzM0OS5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACJgIoAi0CNgJBAkUCUwJaAmMCkAKVApgCpQKqAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAArw=}}
+
+@conference{IPDPS.2008.45361,
+	Address = {Miami},
+	Annote = {Dhawan and Prasad extend on earlier work, taking the explicit algorithm developed in \cite{978-3-540-77220-0_36} and expanding it to a general approach for locally solvable problems. The specific examples given--aside from target coverage--are variants of the target coverage problem described in earlier work, specifically area coverage and k-coverage.
+
+The chief addition to earlier work is an explicit description of the requirements needed to utilize the framework for a generic problem.},
+	Author = {Akshaye Dhawan and Sushil K. Prasad},
+	Booktitle = {Workshop on Advances in Parallel and Distributed Computing Models},
+	Date-Added = {2010-04-03 00:15:24 -0400},
+	Date-Modified = {2010-04-03 00:17:41 -0400},
+	Keywords = {distributed algorithms, distributed target-monitoring protocols},
+	Month = {April},
+	Organization = {IPDPS},
+	Title = {A Distributed Algorithmic Framework for Coverage Problems in Wireless Sensor Networks},
+	Year = {2008},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZ4AAAAAAZ4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRRJUERQUy4yMDA4LjQ1MzYxLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM2X9xr453lBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxr5yHgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA9TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpJUERQUy4yMDA4LjQ1MzYxLnBkZgAADgAqABQASQBQAEQAUABTAC4AMgAwADAAOAAuADQANQAzADYAMQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAMFVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9JUERQUy4yMDA4LjQ1MzYxLnBkZgATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAxLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9JUERQUy4yMDA4LjQ1MzYxLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAJCAkQCSQJSAl0CYQJvAnYCfwKzArgCuwLIAs0AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC3w==}}
