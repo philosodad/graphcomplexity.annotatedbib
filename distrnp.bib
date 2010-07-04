@@ -2,12 +2,506 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for John Daigle at 2010-05-02 17:04:05 -0400 
+%% Created for John Daigle at 2010-07-03 14:08:13 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@article{mitchell06,
+	Abstract = {In this article, I discuss some recent ideas in complex systems on the topic of networks, contained in or inspired by three recent complex systems books. The general science of networks is the subject of Albert-Lazlo Barabasi's Linked [A.-L. Barabasi, Linked: The New Science of Networks, Perseus, New York, 2002] and Duncan Watts' Six Degrees [D. Watts, Six Degrees: The Science of a Connected Age, Gardner's Books, New York, 2003]. Commonalities among complex biological networks, e.g., immune systems, social insects, and cellular metabolism, and their relation to intelligence in computational systems are explored in the proceedings of a interdisciplinary conference on "Distributed Autonomous Systems" [L.A. Segel, I.R. Cohen (Eds.), Design Principles for the Immune System and Other Distributed Autonomous Systems, Oxford University Press, New York, 2001].The ideas discussed in the third book have led to me to propose four general principles of adaptive information processing in decentralized systems. These principles, and the relevance of "network thinking" for artificial intelligence (and vice versa), are the subject of the last two sections of the article.},
+	Annote = {This is a review of the literature concerning complex systems and network science. As such, it covers everthing from the development and definitions of small-world, random, and scale-free networks to network theories of metabolism.
+
+Of particular interest is the last section of the paper, which contains Mtchells 4 principles for adaptive information processing in distributed systems. Areas where this specific idea might be usefull include any coloring/covering problem that must be solved for a dynamic network. The principles are: 
+
+1. Global information is inferred from statistical analysis of the parts of the system.
+2. Algorithms use random chance.
+3. The system covers many possibilities in random.
+4. The system uses bottom-up control processes and top-down control processes continuously.
+
+The common thread to all 4 approaches is that feedback mechanisms are essential, both to distribute and maintain global state.},
+	Author = {Mitchell, M.},
+	Booktitle = {Special Review Issue},
+	Citeulike-Article-Id = {993049},
+	Date-Added = {2010-07-03 13:56:15 -0400},
+	Date-Modified = {2010-07-03 13:56:15 -0400},
+	Doi = {http://dx.doi.org/10.1016/j.artint.2006.10.002},
+	Journal = {Artificial Intelligence},
+	Keywords = {complex-networks},
+	Month = {December},
+	Number = {18},
+	Pages = {1194--1212},
+	Posted-At = {2009-01-29 11:14:16},
+	Priority = {2},
+	Title = {Complex systems: Network thinking},
+	Url = {http://dx.doi.org/10.1016/j.artint.2006.10.002},
+	Volume = {170},
+	Year = {2006},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAa4AAAAAAa4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRhqLmFydGludC4yMDA2LjEwLjAwMi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXtTxb5G3gAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxb6NLgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgBBTWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpqLmFydGludC4yMDA2LjEwLjAwMi5wZGYAAA4AMgAYAGoALgBhAHIAdABpAG4AdAAuADIAMAAwADYALgAxADAALgAwADAAMgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIANFVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9qLmFydGludC4yMDA2LjEwLjAwMi5wZGYAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QNS4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vai5hcnRpbnQuMjAwNi4xMC4wMDIucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAlICVAJZAmICbQJxAn8ChgKPAscCzALPAtwC4QAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALz},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1016/j.artint.2006.10.002}}
+
+@inproceedings{1315848,
+	Abstract = {Fireflies exhibit a fascinating phenomenon of spontaneous synchronization that occurs in nature: at dawn, they gather on trees and synchronize progressively without relying on a central entity. The present article reviews this process by looking at experiments that were made on fireflies and the mathematical model of Mirollo and Strogatz [1], which provides key rules to obtaining a synchronized network in a decentralized manner. This model is then applied to wireless ad hoc networks. To properly apply this model with an accuracy limited only to the propagation delay, a novel synchronization scheme, which is derived from the original firefly synchronization principle, is presented, and simulation results are given.},
+	Address = {New York, NY, USA},
+	Annote = {This paper introduces the idea of using Firefly behavior as a means of synchronizing networks. The authors present the problem in detail, specifically why node synchronization is a difficult problem and how Coupled Oscillators have been used in the past.
+
+The paper details the relevant aspect of firefly behavior and covers experiments in firefly synchronization behavior that are considered relevant to the wireless networking environment. Specifically, it is found that fireflies will consistently, if exposed to only one flash that it out of their own rhythm, respond to only that flash and return to their rythym afterwords. 
+
+This robust behavior must be captured if sensor systems will have the same ability to synchronize. The authors propose adding a refractory period for each sensor, so that it does not recieve reflective pulses (echoes of pulses it has alredy responded to). 
+
+Simulation results were positive. The system synchronizes quickly and accurately.},
+	Author = {Tyrrell, Alexander and Auer, Gunther and Bettstetter, Christian},
+	Booktitle = {BIONETICS '06: Proceedings of the 1st international conference on Bio inspired models of network, information and computing systems},
+	Date-Added = {2010-07-03 13:45:05 -0400},
+	Date-Modified = {2010-07-03 13:45:05 -0400},
+	Doi = {http://doi.acm.org/10.1145/1315843.1315848},
+	Isbn = {1-4244-0463-0},
+	Location = {Cavalese, Italy},
+	Pages = {4},
+	Publisher = {ACM},
+	Title = {Fireflies as role models for synchronization in ad hoc networks},
+	Year = {2006},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYYAAAAAAYYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ5hNC10eXJyZWxsLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYUPTyE1CfAAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyE16vAAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA3TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzphNC10eXJyZWxsLnBkZgAADgAeAA4AYQA0AC0AdAB5AHIAcgBlAGwAbAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9hNC10eXJyZWxsLnBkZgATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxArLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9hNC10eXJyZWxsLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIqAiwCMQI6AkUCSQJXAl4CZwKVApoCnQKqAq8AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACwQ==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1315843.1315848}}
+
+@inproceedings{1322308,
+	Abstract = {Sensor networks have been used in a wide range of applications. Considerable research effort is currently devoted to design protocols that allow networks of inexpensive sensors to perform reliable remote control and monitoring functions, in spite of the limitations of each device.
+
+Our objective is to demonstrate a fully software implementation of the so called Pulse Coupled Oscillator Protocol, proposed in [2, 6] for the decentralized synchronization of radio devices. The PCO protocol is inspired by a model found in mathematical biology [5]. It is decentralized, scalable and simple, as we will show in our demonstration.},
+	Address = {New York, NY, USA},
+	Annote = {This is an abstract, so light on the details. The work described is a working test of a new protocol for syncing message transmission in an ad hoc network. The protocol is based on a "Pulse-Coupled Oscillator" or "Firefly" algorithm, a fully distributed algorithm based on the behavior of fireflies.
+
+The authors main contribution is implementing a testbed that replaces traditional MAC protocol with their own. This leads to more meaningfull results.},
+	Author = {Pagliari, Roberto and Scaglione, Anna},
+	Booktitle = {SenSys '07: Proceedings of the 5th international conference on Embedded networked sensor systems},
+	Date-Added = {2010-07-03 13:28:58 -0400},
+	Date-Modified = {2010-07-03 13:28:58 -0400},
+	Doi = {http://doi.acm.org/10.1145/1322263.1322308},
+	Isbn = {978-1-59593-763-6},
+	Keywords = {biologically inspired algorithms, fireflies, pulse coupled oscillators, sensor networks, synchronization, syncronization},
+	Location = {Sydney, Australia},
+	Pages = {387--388},
+	Publisher = {ACM},
+	Title = {Design and implementation of a PCO-based protocol for sensor networks},
+	Year = {2007},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZIAAAAAAZIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRFwMzg3LXBhZ2xpYXJpLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYURHyE1DuAAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyE17+AAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA6TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMzg3LXBhZ2xpYXJpLnBkZgAOACQAEQBwADMAOAA3AC0AcABhAGcAbABpAGEAcgBpAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAtVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3AzODctcGFnbGlhcmkucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAuLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wMzg3LXBhZ2xpYXJpLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAI2AjgCPQJGAlECVQJjAmoCcwKkAqkCrAK5Ar4AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC0A==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1322263.1322308}}
+
+@inproceedings{1089771,
+	Abstract = {In the last few years, the advance of multimedia applications has  prompted researchers to undertake the task of routing multimedia  data through Manet. This task is rather difficult due to the highly  dynamic topology of mobile ad hoc networks and their limited  bandwidth. Actually, different routing algorithms are proposed in  order to route various kinds of sources (such as voice, video, or  data) with diverse traffic characteristics and Quality of Service  Requirements (QoS). These algorithms must take into account   significant traffic problems such as packet losses, transmission  delays, delay variations, etc, caused mainly by congestion in the  networks. The prediction of these problems in real time is quite  difficult, making the effectiveness of ``traditional'' protocols based  on analytical models questionable. We propose in this paper a  solution based on swarm intelligence paradigm that we find more  adapted for this kind of problems. },
+	Address = {New York, NY, USA},
+	Annote = {The authors focus on the issue of network plasticity, that is, a Mobile Ad-hoc Network changes configuration constantly.  It is proposed that a stream of forward packets and backward packets could be used to provide constant updates on the current state of the network and the optimal routing between nodes.},
+	Author = {Saida Ziane and Abdelhamid Melouk},
+	Booktitle = {Q2SWinet '05: Proceedings of the 1st ACM international workshop on Quality of service \& security in wireless and mobile networks},
+	Date-Added = {2010-07-02 19:23:40 -0400},
+	Date-Modified = {2010-07-02 19:23:52 -0400},
+	Doi = {http://doi.acm.org/10.1145/1089761.1089771},
+	Group = {adapt; adapt paper},
+	Isbn = {1-59593-241-0},
+	Keywords = {swarm intelligence},
+	Local-Url = {file://localhost/Users/paul/Documents/Biblio/p55-ziane.pdf},
+	Location = {Montreal, Quebec, Canada},
+	Pages = {55--62},
+	Publisher = {ACM Press},
+	Title = {A swarm intelligent multi-path routing for multimedia traffic over mobile ad hoc networks},
+	Year = {2005},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYIAAAAAAYIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ1wNTUtemlhbmUucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXyExVjg0wAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxVknIwAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA2TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwNTUtemlhbmUucGRmAA4AHAANAHAANQA1AC0AegBpAGEAbgBlAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgApVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3A1NS16aWFuZS5wZGYAABMAAS8AABUAAgAL//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfECouLi8uLi8uLi8uLi9Eb2N1bWVudHMvQmlibGlvL3A1NS16aWFuZS5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACJgIoAi0CNgJBAkUCUwJaAmMCkAKVApgCpQKqAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAArw=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1089761.1089771}}
+
+@inproceedings{rouff-2004,
+	Abstract = {The emergent properties of swarms make swarm-based missions powerful, but at the same time more difficult to design and to assure that the proper behaviors will emerge. We are currently investigating formal methods and techniques for verification and validation of swarm- based missions. The Autonomous Nano-Technology Swarm (ANTS) mission is being used as an example and case study for swarm-based missions to experiment and test current formal methods with intelligent swarms. Using the ANTS mission, we have evaluated multiple formal methods to determine their effectiveness in modeling and assuring swarm behavior. This paper introduces how intelligent swarm technology is being proposed for NASA missions, and gives the results of a comparison of several formal methods and approaches for specifying intelligent swarm-based systems and their effectiveness for predicting emergent behavior.},
+	Annote = {This paper looks at the problem of specifying behavior in a swarm based system. Specification is a problem because interaction between agents produces an exponential number of possible system states. Some of these system states may or may not produce errors or race conditions. Such conditions are difficult to anticipate because any practical or simulation will only test a small number of possible states.
+
+The authors test four formalized methods for specifying swarm systems. Two of these methods are process algebras, Communicating Sequential Proccesses (CSP) and Weighted Synchronous Calculus of Communicating Systems (WSCCS). The other two are state machine approaches Unity Logic and X-Machines.
+
+The authors evaluate each method in terms of how well the method can be used to model system behavior and discover problems. They find that state machine approaches are excellent for examining the internal behavior of individual nodes in a parrallel system, but not behavior of the system itself. The weakness of process algebra seems to be an imprecision in terms of tracking the goals of the system, that is, modeling what states might be desirable and the systems likelihood of obtaining those states.  },
+	Author = {Christopher Rouff and Amy Vanderbilt and Mike Hinchey and Walt Truszkowski},
+	Booktitle = {Proceedings. 11th IEEE International Conference and Workshop on the Engineering of Computer-Based Systems, 2004},
+	Date-Added = {2010-07-02 19:22:11 -0400},
+	Date-Modified = {2010-07-02 19:22:36 -0400},
+	Keywords = {swarm intelligence},
+	Local-Url = {file://localhost/Users/paul/Documents/Biblio/01316730.pdf},
+	Pages = {443--448},
+	Title = {Verification of emergent behaviors in swarm-based systems},
+	Year = {2004},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAX4AAAAAAX4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQwwMTMxNjczMC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXrZxVjgzwAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxVknHwAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA1TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzowMTMxNjczMC5wZGYAAA4AGgAMADAAMQAzADEANgA3ADMAMAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKFVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby8wMTMxNjczMC5wZGYAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QKS4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vMDEzMTY3MzAucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAiICJAIpAjICPQJBAk8CVgJfAosCkAKTAqACpQAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAK3}}
+
+@inproceedings{1018906,
+	Abstract = {One of the well-studied issues in multi-agent systems is the standard action-selection and sequencing problem where a goal task can be performed in different ways, by different agents. Tasks have constraints while agents have different characteristics such as capacity, access to resources, motivations, etc. This class of problems has been tackled under different approaches. Moreover, in open, dynamic environments, agents must be able to adapt to the changing organizational goals, available resources, their relationships to another agents, and so on. This problem is a key one in multi-agent systems and relates to models of learning and adaptation, such as those observed among social insects. The present paper tackles the process of generating, adapting, and changing multiagent organization dynamically at systemruntime, using a swarm inspired approach. This approach is used here mainly for task allocation with low need of pre-planning and specification, and no need of explicit coordination. The results of our approach and another quantitative one are compared here and it is shown that in dynamic domains, the agents adapt to changes in the organization, just as social insects do. },
+	Address = {Washington, DC, USA},
+	Annote = {This is an extremely short paper that looks at a narrow problem. Specifically, the paper looks at the question of task allocation in a dynamic environment. Efficient algorithms for task allocation are usually task specific and cannot adapt to an increase or decrease in the relationship between tasks. 
+
+The algorithm proposed by the authors adapts to new task schedules easily and produces optimal outputs with a reasonably high frequency (48\%).},
+	Author = {Denise de Oliveira and Paulo R. Ferreira Jr. and Ana L. C. Bazzan},
+	Booktitle = {AAMAS '04: Proceedings of the Third International Joint Conference on Autonomous Agents and Multiagent Systems},
+	Date-Added = {2010-07-02 18:02:04 -0400},
+	Date-Modified = {2010-07-03 14:02:20 -0400},
+	Doi = {http://dx.doi.org/10.1109/AAMAS.2004.33},
+	Group = {adapt; adapt paper},
+	Isbn = {1-58113-864-4},
+	Local-Url = {file://localhost/Users/paul/Documents/Biblio/p1250.pdf},
+	Location = {New York, New York},
+	Pages = {1252--1253},
+	Publisher = {IEEE Computer Society},
+	Title = {A Swarm Based Approach for Task Allocation in Dynamic Agents Organizations},
+	Year = {2004},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXIAAAAAAXIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQlwMTI1MC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYxGAxVjgz1BERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxVknHwAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgAyTWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMTI1MC5wZGYADgAUAAkAcAAxADIANQAwAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAlVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3AxMjUwLnBkZgAAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QJi4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vcDEyNTAucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAhYCGAIdAiYCMQI1AkMCSgJTAnwCgQKEApEClgAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAKo},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/AAMAS.2004.33}}
+
+@inproceedings{508968,
+	Abstract = {Swarm behavior as demonstrated by flocks of birds, schools of fish, and swarms of insects provide a useful method for implementing a distributed network of mobile sensor platforms. Such mobile sensor swarm systems are useful for various search or surveillance activities.  Swarm behavior ensures safe separation between swarm members while enforcing a  level of cohesion. These two properties, when considered in  the context of sensors and wireless communications, provide for low redundancy coverage and a robust and reliable communications system. This paper examines particle swarm  behavior through simulation with respect to such a sensor network. Analysis of swarm behavior for various parameter settings indicate a classification methodology. This provides a foundation for a proposed taxonomy.},
+	Address = {New York, NY, USA},
+	Annote = {The authors define what a swarm is and the basic rules that a swarm operates under. The principles are separation, cohesion, and alignment. Particles try to maintain a minimum separation distance, cohere within a maximum separation distance, and match vectors. The authors show that it is simple to achieve a regular formation that is roughly a triangular lattice by allowing mobile sensors to follow only these three rules.
+
+The system described is primarily concerned with mobile navigation, so the authors introduce a few new concepts including {\em peripheral vision, waypoints, speed, and turning angle}. These additional concepts might or might not be useful if attempting to use a swarm algorithm for some other purpse.
+
+The authors propose two metrics, Connectivity and Coverage Efficiency, to evaluate swarm based systems. Connectivity is a description of how well nodes can communicate to the network, and coverage efficiency is the level of redundancy in the deployment of the network. The goal would be to maximize the former and minimize the latter. 
+
+The authors introduce formal methods of describing and analyzing swarm behavior, and show that swarm optimization can be applied to certain navigation tasks in mobile sensor systems.
+
+},
+	Author = {B. Anthony Kadrovach and Gary B. Lamont},
+	Booktitle = {SAC '02: Proceedings of the 2002 ACM symposium on Applied computing},
+	Date-Added = {2010-07-02 17:08:11 -0400},
+	Date-Modified = {2010-07-02 17:08:11 -0400},
+	Doi = {http://doi.acm.org/10.1145/508791.508968},
+	Isbn = {1-58113-445-2},
+	Keywords = {simulation},
+	Local-Url = {file://localhost/Users/paul/Documents/Biblio/p918-kadrovach.pdf},
+	Location = {Madrid, Spain},
+	Pages = {918--924},
+	Publisher = {ACM Press},
+	Title = {A particle swarm model for swarm-based networked sensor systems},
+	Year = {2002},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZYAAAAAAZYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRJwOTE4LWthZHJvdmFjaC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYwSgxVjg01BERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxVknIwAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA7TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwOTE4LWthZHJvdmFjaC5wZGYAAA4AJgASAHAAOQAxADgALQBrAGEAZAByAG8AdgBhAGMAaAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIALlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9wOTE4LWthZHJvdmFjaC5wZGYAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QLy4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vcDkxOC1rYWRyb3ZhY2gucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAjoCPAJBAkoCVQJZAmcCbgJ3AqkCrgKxAr4CwwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALV},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/508791.508968}}
+
+@inproceedings{00970460,
+	Abstract = {The purposes of the paper are to propose and evaluate an immune
+optimization algorithm inspired by biological immune cell-cooperation,
+and this algorithm solves the division-of-labor problems in a
+multi-agent system (MAS). The proposed algorithm solves the problem
+through interactions between agents, and between agents and the
+environment. The interactions are performed by division-and-integration
+processing, inspired by immune cell-cooperation and a similar
+co-evolutionary approach. The division-and-integration processing
+optimizes the work domain, and the similar co-evolutionary approach
+performs equal divisions. To investigate the validity, this algorithm is
+applied to "N-th agent's Travelling Salesmen Problem" as a typical
+problem of MAS. The best property for solving via MAS is clarified with
+some simulations},
+	Annote = {The authors describe a parallel or distributed system in which different nodes perform different roles. Some nodes are in charge of presenting the antigens (similar to Dendritic cells or T-Cells), some model the elimination of antigens (much like macrophages or killer t-cells), some generate antibodies (much like B cells) and some control the system.
+
+The system is designed to work on problems that can be divided into subproblems, with those subproblems being solved by the distributed system and then recombined to form a global solution.
+
+The authors focus on the n-agent traveling salesman problem. In the n-agent version of the TSP, the minimal tour is an integration of minimal subtours.
+
+The authors show that their method will converge on a good solution in reasonable time.
+
+},
+	Author = {Toma, N. and Endo, S. and Yamada, K. and Miyagi, H.},
+	Booktitle = {Computational Intelligence and Multimedia Applications, 2001. ICCIMA 2001. Proceedings. Fourth International Conference on},
+	Date-Added = {2010-07-02 16:27:02 -0400},
+	Date-Modified = {2010-07-02 16:27:02 -0400},
+	Group = {immune; immunity as metaphor},
+	Keywords = {simulation},
+	Local-Url = {file://localhost/Users/paul/Documents/Biblio/00970460.pdf},
+	Title = {An immune optimization inspired by biological immune cell-cooperation for division-and-labor problem},
+	Year = {2001},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAX4AAAAAAX4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQwwMDk3MDQ2MC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYwNVxVjgzlBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxVknHgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA1TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzowMDk3MDQ2MC5wZGYAAA4AGgAMADAAMAA5ADcAMAA0ADYAMAAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKFVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby8wMDk3MDQ2MC5wZGYAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QKS4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vMDA5NzA0NjAucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAiICJAIpAjICPQJBAk8CVgJfAosCkAKTAqACpQAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAK3}}
+
+@inproceedings{00538159,
+	Annote = {The authors model of the immune system is simpified into three components: a bone marrow component that generates solutions, a B-Cell component that represents a single solution, and an antigen component that represents the problem. The bone-marrow component always outputs random solutions. Each B-Cell evaluates it's own fitness against the antigen. Good solutions create copies of themselves. 
+
+System learning is represented by the population of B-Cells. 
+
+The authors proceed by first training (innoculating) the B-Cell population by presenting it with a test problem. An innoculated system can then be presented with real problems that are similar to the test problem, and solutions should result.
+
+The paper doesn't discuss runtime or fitness versus other algorithms. For the purposes of an actual distributed system, this algorithm would be more usefull than other algorithms such as the Bumblebess presented in \cite{1543949}, because it has no central controller.},
+	Author = {Hunt, J.E. and Cooke, D.E.},
+	Bdsk-Color = {3439290111},
+	Booktitle = {Systems, Man and Cybernetics, 1995. 'Intelligent Systems for the 21st Century'., IEEE International Conference on},
+	Date-Added = {2010-07-02 15:37:19 -0400},
+	Date-Modified = {2010-07-02 15:37:19 -0400},
+	Group = {immune; adapt},
+	Keywords = {adaptive system},
+	Local-Url = {file://localhost/Users/paul/Documents/Biblio/00538156.pdf},
+	Pages = {2494-2499},
+	Title = {An adaptive, distributed learning system based on the immune system},
+	Volume = {3},
+	Year = {1995},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAX4AAAAAAX4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQwwMDUzODE1Ni5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXq0xVjgzlBERiBwcnZ3AAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxVknHgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA1TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzowMDUzODE1Ni5wZGYAAA4AGgAMADAAMAA1ADMAOAAxADUANgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKFVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby8wMDUzODE1Ni5wZGYAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QKS4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vMDA1MzgxNTYucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAiICJAIpAjICPQJBAk8CVgJfAosCkAKTAqACpQAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAK3}}
+
+@inproceedings{1146387,
+	Abstract = {Coloring the nodes of a graph with a small number of colors is one of the most fundamental problems in theoretical computer science. In this paper, we study graph coloring in a distributed setting. Processors of a distributed system are nodes of an undirected graph G. There is an edge between two nodes whenever the corresponding processors can directly communicate with each other. We assume that distributed coloring algorithms start with an initial m-coloring of G. In the paper, we prove new strong lower bounds for two special kinds of coloring algorithms. For algorithms which run for a single communication round---i.e., every node of the network can only send its initial color to all its neighbors---, we show that the number of colors of the computed coloring has to be at least Ω(Δ2/log2 Δ+ log log m). If such one-round algorithms are iteratively applied to reduce the number of colors step-by-step, we prove a time lower bound of Ω(Δ/log2 Δ+ log*m) to obtain an O(Δ)-coloring. The best previous lower bounds for the two types of algorithms are Ω(log log m) and Ω(log*m), respectively. },
+	Address = {New York, NY, USA},
+	Annote = {This is a greatly cited paper that places an lower bound on the running time of a class of distributed iterative coloring algorithms. These algorithms start by coloring the graph with $q$ colors, where $q$ is some number larger than $\Delta$. The authors show that there exists an algorithm which can produce a $q-coloring$ in a single round. After this coloring is produced, the method is to iteratively reduce the number of colors in the graph until reaching $O(\Delta)$. 
+
+The paper uses as a fundamental tool of analysis the concept of a "neighborhood graph". The Lifetime Dependency Graph presented in \cite{IPDPS.2008.45361} is a similar but more specialized structure that builds dependencies between solutions, rather than dependencies between local neighborhoods.
+
+The information gathering potential across the neighborhood graph forms the lower bound for deterministic algorithm. This bound is tested by a random algorithm. The authors prove the probability that a random algorithm could generate an $O(\Delta)$ coloring in a single round.},
+	Author = {Kuhn, Fabian and Wattenhofer, Roger},
+	Booktitle = {PODC '06: Proceedings of the twenty-fifth annual ACM symposium on Principles of distributed computing},
+	Date-Added = {2010-07-01 01:39:10 -0400},
+	Date-Modified = {2010-07-01 01:39:10 -0400},
+	Doi = {http://doi.acm.org/10.1145/1146381.1146387},
+	Isbn = {1-59593-384-0},
+	Keywords = {chromatic number, distributed algorithms, graph coloring, locality, neighborhood graph, symmetry breaking},
+	Location = {Denver, Colorado, USA},
+	Pages = {7--15},
+	Publisher = {ACM},
+	Title = {On the complexity of distributed graph coloring},
+	Year = {2006},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXoAAAAAAXoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQtwNy1rdWhuLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXzExv0sOwAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxv1kewAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA0TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwNy1rdWhuLnBkZgAOABgACwBwADcALQBrAHUAaABuAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAnVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3A3LWt1aG4ucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAoLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wNy1rdWhuLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIeAiACJQIuAjkCPQJLAlICWwKGAosCjgKbAqAAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACsg==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1146381.1146387}}
+
+@inproceedings{1543949,
+	Abstract = {This paper introduces a multiagent optimization algorithm inspired by the collective behavior of social insects. In this method, each agent encodes a possible solution of the problem to solve, and evolves in a way similar to real life insects. We test the algorithm on a classical difficult problem, the k-coloring of a graph, and we compare its performance in relation to a standard genetic algorithm and another multiagent system. The results show that this algorithm is faster and outperforms the other methods for a range of random graphs with different orders and densities. Moreover, the method is easy to adapt to solve different NP-complete problems.},
+	Address = {New York, NY, USA},
+	Annote = {The bumblebee algorithm is essentially a modified genetic algorithm. The "bees" are random solutions the problem. These solutions are given parameters, fitness and lifetime. The solutions are semi-randomly selected and compared to each other. The best solutions are encoded into the next generation of "bees", with mutation applied to every solution in every generation.
+
+Because this algorithm requires that all solutions return to a central location, it cannot be directly implemented in a distributed manner.},
+	Author = {Comellas, Francesc and Martinez-Navarro, Jesus},
+	Booktitle = {GEC '09: Proceedings of the first ACM/SIGEVO Summit on Genetic and Evolutionary Computation},
+	Date-Added = {2010-07-01 01:25:44 -0400},
+	Date-Modified = {2010-07-01 01:25:44 -0400},
+	Doi = {http://doi.acm.org/10.1145/1543834.1543949},
+	Isbn = {978-1-60558-326-6},
+	Keywords = {adaptative complex systems, combinatorial optimization, graph coloring, multiagent system},
+	Location = {Shanghai, China},
+	Pages = {811--814},
+	Publisher = {ACM},
+	Title = {Bumblebees: a multiagent combinatorial optimization algorithm inspired by social insect behaviour},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZIAAAAAAZIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRFwODExLWNvbWVsbGFzLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS1CqyCW/4wAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyCX4IwAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA6TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwODExLWNvbWVsbGFzLnBkZgAOACQAEQBwADgAMQAxAC0AYwBvAG0AZQBsAGwAYQBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAtVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3A4MTEtY29tZWxsYXMucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAuLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wODExLWNvbWVsbGFzLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAI2AjgCPQJGAlECVQJjAmoCcwKkAqkCrAK5Ar4AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC0A==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1543834.1543949}}
+
+@inproceedings{1536432,
+	Abstract = {The distributed (Δ + 1)-coloring problem is one of most fundamental and well-studied problems in Distributed Algorithms. Starting with the work of Cole and Vishkin in 86, there was a long line of gradually improving algorithms published. The current state-of-the-art running time is O(Δ log Δ + log* n), due to Kuhn and Wattenhofer, PODC'06. Linial (FOCS'87) has proved a lower bound of 1/2 log* n for the problem, and Szegedy and Vishwanathan (STOC'93) provided a heuristic argument that shows that algorithms from a wide family of locally iterative algorithms are unlikely to achieve running time smaller than Θ(Δ log Δ). We present a deterministic (Δ + 1)-coloring distributed algorithm with running time O(Δ) + 1/2 log* n. We also present a tradeoff between the running time and the number of colors, and devise an O(Δ * t)-coloring algorithm with running time O(Δ / t + log* n), for any parameter t, 1 < t ≤ Δ1-ε, for an arbitrarily small constant ε, 0 < ε < 1. Our algorithm breaks the heuristic barrier of Szegedy and Vishwanathan, and achieves running time which is linear in the maximum degree Δ. On the other hand, the conjecture of Szegedy and Vishwanathan may still be true, as our algorithm is not from the family of locally iterative algorithms. On the way to this result we study a generalization of the notion of graph coloring, which is called defective coloring. In an m-defective p-coloring the vertices are colored with p colors so that each vertex has up to m neighbors with the same color. We show that an m-defective p-coloring with reasonably small m and p can be computed very efficiently. We also develop a technique to employ multiple defective colorings of various subgraphs of the original graph G for computing a (Δ+1)-coloring of G. We believe that these techniques are of independent interest.
+
+},
+	Address = {New York, NY, USA},
+	Annote = {This is an ingenous approach to solving the $\Delta + 1$ coloring problem in a distributed system. The approach of combing defective colorings is new with the authors.
+
+A defective coloring of a graph is a coloring that violates the disjoint nature of coloring to some fixed extent. That is, if a correct coloring requires that no vertex has a neighbor of the same color, an m-defective coloring allows at least $m$ vertexes to have a neighbor of the same color. The authors first develop an effecient algorithm to generate distributed m-defective colorings of the graph. These colorings are combined and then improved to correct colorings. This is a deterministic approach.
+
+The exact method of combining the colorings could be presented more clearly, but this is obviously an algorithm that could be simulated. The authors do not present simulation results, but do present formal proofs of correctness.},
+	Author = {Barenboim, Leonid and Elkin, Michael},
+	Booktitle = {STOC '09: Proceedings of the 41st annual ACM symposium on Theory of computing},
+	Date-Added = {2010-07-01 01:24:04 -0400},
+	Date-Modified = {2010-07-03 14:08:13 -0400},
+	Doi = {http://doi.acm.org/10.1145/1536414.1536432},
+	Isbn = {978-1-60558-506-2},
+	Keywords = {coloring, defective-coloring, distributed algorithms},
+	Location = {Bethesda, MD, USA},
+	Pages = {111--120},
+	Publisher = {ACM},
+	Title = {Distributed ({$\Delta$}+1)-coloring in linear (in {$\Delta$}) time},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZYAAAAAAZYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRJwMTExLWJhcmVuYm9pbS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS1DFyCXACgAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyCX4SgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA7TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMTExLWJhcmVuYm9pbS5wZGYAAA4AJgASAHAAMQAxADEALQBiAGEAcgBlAG4AYgBvAGkAbQAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIALlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9wMTExLWJhcmVuYm9pbS5wZGYAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QLy4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vcDExMS1iYXJlbmJvaW0ucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAjoCPAJBAkoCVQJZAmcCbgJ3AqkCrgKxAr4CwwAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALV},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1536414.1536432}}
+
+@inproceedings{338269,
+	Address = {Philadelphia, PA, USA},
+	Annote = {The algorithms presented are sequential algorithms that depend on solving a relaxation problem over the graph. This is difficult to implement in a distributed manner.},
+	Author = {Halperin, Eran},
+	Booktitle = {SODA '00: Proceedings of the eleventh annual ACM-SIAM symposium on Discrete algorithms},
+	Date-Added = {2010-06-27 03:37:09 -0400},
+	Date-Modified = {2010-06-27 03:37:09 -0400},
+	Isbn = {0-89871-453-2},
+	Keywords = {Algorithms, Design, Theory, Verification, vertex cover},
+	Location = {San Francisco, California, United States},
+	Pages = {329--337},
+	Publisher = {Society for Industrial and Applied Mathematics},
+	Title = {Improved approximation algorithms for the vertex cover problem in graphs and hypergraphs},
+	Year = {2000},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZIAAAAAAZIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRFwMzI5LWhhbHBlcmluLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXw1x1R2hgAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAx1S81gAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA6TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMzI5LWhhbHBlcmluLnBkZgAOACQAEQBwADMAMgA5AC0AaABhAGwAcABlAHIAaQBuAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAtVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3AzMjktaGFscGVyaW4ucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAuLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wMzI5LWhhbHBlcmluLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAI2AjgCPQJGAlECVQJjAmoCcwKkAqkCrAK5Ar4AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC0A==}}
+
+@article{254190,
+	Abstract = { We survey approximation algorithms for some well-known and very natural combinatorial optimization problems, the minimum set covering, the minimum vertex covering, the maximum set packing, and maximum independent set problems; we discuss their approximation performance and their complexity. For already known results, any time we have conceived simpler proofs than those already published, we give these proofs, and, for the rest, we cite the simpler published ones. Finally, we discuss how one can relate the approximability behavior (from both a positive and a negative point of view) of vertex covering to the approximability behavior of a restricted class of independent set problems.  },
+	Address = {New York, NY, USA},
+	Annote = {This is a survey paper as indicated in the title. The authors offer solid theoretical background to each problem and psuedocode for each algorithm. A taxonomy of solutions to these problems is also presented. This paper is useful.},
+	Author = {Paschos, Vangelis T.},
+	Date-Added = {2010-06-27 03:34:14 -0400},
+	Date-Modified = {2010-06-27 03:34:14 -0400},
+	Doi = {http://doi.acm.org/10.1145/254180.254190},
+	Issn = {0360-0300},
+	Journal = {ACM Comput. Surv.},
+	Keywords = {algorithm analysis, approximation algorithms, combinatorial algorithms, constrained optimization, problem complexity},
+	Number = {2},
+	Pages = {171--209},
+	Publisher = {ACM},
+	Title = {A survey of approximately optimal solutions to some covering and packing problems},
+	Volume = {29},
+	Year = {1997},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAY4AAAAAAY4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRBwMTcxLXBhc2Nob3MucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACXvNx1R0QQAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAx1S6kQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA5TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMTcxLXBhc2Nob3MucGRmAAAOACIAEABwADEANwAxAC0AcABhAHMAYwBoAG8AcwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIALFVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9wMTcxLXBhc2Nob3MucGRmABMAAS8AABUAAgAL//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfEC0uLi8uLi8uLi8uLi9Eb2N1bWVudHMvQmlibGlvL3AxNzEtcGFzY2hvcy5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACMgI0AjkCQgJNAlECXwJmAm8CnwKkAqcCtAK5AAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAss=},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/254180.254190}}
+
+@article{17531094,
+	Abstract = {BACKGROUND:Allosteric communications are vital for cellular signaling. Here we explore a relationship between protein architectural organization and shortcuts in signaling pathways.
+
+RESULTS:We show that protein domains consist of modules interconnected by residues that mediate signaling through the shortest pathways. These mediating residues tend to be located at the inter-modular boundaries, which are more rigid and display a larger number of long-range interactions than intra-modular regions. The inter-modular boundaries contain most of the residues centrally conserved in the protein fold, which may be crucial for information transfer between amino acids. Our approach to modular decomposition relies on a representation of protein structures as residue-interacting networks, and removal of the most central residue contacts, which are assumed to be crucial for allosteric communications. The modular decomposition of 100 multi-domain protein structures indicates that modules constitute the building blocks of domains. The analysis of 13 allosteric proteins revealed that modules characterize experimentally identified functional regions. Based on the study of an additional functionally annotated dataset of 115 proteins, we propose that high-modularity modules include functional sites and are the basic functional units. We provide examples (the Galphas subunit and P450 cytochromes) to illustrate that the modular architecture of active sites is linked to their functional specialization.
+
+CONCLUSION:Our method decomposes protein structures into modules, allowing the study of signal transmission between functional sites. A modular configuration might be advantageous: it allows signaling proteins to expand their regulatory linkages and may elicit a broader range of control mechanisms either via modular combinations or through modulation of inter-modular linkages.},
+	Annote = {This work expands on previous work in \cite{Sol:2006uq}, restating the basic research hypothesis that proteins can be viewed as data processing networks and presenting a small world network model of proteins. In the current work, more experimental work is done to validate the model. },
+	Author = {del Sol, Antonio and Arauzo-Bravo, Marcos and Amoros, Dolors and Nussinov, Ruth},
+	Date-Added = {2010-06-27 03:29:46 -0400},
+	Date-Modified = {2010-06-27 03:29:46 -0400},
+	Doi = {10.1186/gb-2007-8-5-r92},
+	Issn = {1465-6906},
+	Journal = {Genome Biology},
+	Keywords = {Genome studies, Biochemistry and structural biology, Bioinformatics},
+	Number = {5},
+	Pages = {R92},
+	Pubmedid = {17531094},
+	Title = {Modular architecture of protein structures and allosteric communications: potential implications for signaling proteins and regulatory linkages},
+	Url = {http://genomebiology.com/2007/8/5/R92},
+	Volume = {8},
+	Year = {2007},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZoAAAAAAZoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRNnYi0yMDA3LTgtNS1yOTIucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQaC4x/fT3VBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAx/gMHQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA8TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpnYi0yMDA3LTgtNS1yOTIucGRmAA4AKAATAGcAYgAtADIAMAAwADcALQA4AC0ANQAtAHIAOQAyAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAvVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL2diLTIwMDctOC01LXI5Mi5wZGYAABMAAS8AABUAAgAL//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfEDAuLi8uLi8uLi8uLi9Eb2N1bWVudHMvQmlibGlvL2diLTIwMDctOC01LXI5Mi5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACPgJAAkUCTgJZAl0CawJyAnsCrgKzArYCwwLIAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAto=},
+	Bdsk-Url-1 = {http://genomebiology.com/2007/8/5/R92},
+	Bdsk-Url-2 = {http://dx.doi.org/10.1186/gb-2007-8-5-r92}}
+
+@inproceedings{1582746,
+	Abstract = {The paper presents distributed and parallel δ-approximation algorithms for covering problems, where δ is the maximum number of variables on which any constraint depends (for example, δ = 2 for VERTEX COVER).
+
+Specific results include the following.
+
+For WEIGHTED VERTEX COVER, the first distributed 2-approximation algorithm taking O(log n) rounds and the first parallel 2-approximation algorithm in RNC. The algorithms generalize to covering mixed integer linear programs (CMIP) with two variables per constraint (δ = 2).
+
+For any covering problem with monotone constraints and submodular cost, a distributed δ-approximation algorithm taking O(log2 |C|) rounds, where |C| is the number of constraints. (Special cases include CMIP, facility location, and probabilistic (two-stage) variants of these problems.)},
+	Address = {New York, NY, USA},
+	Annote = {Presents a number of algorithms to solve covering problems. The algorithm that is presented as a two approximation of the MWVC is a distributed version of the authors prior sequential algorithm. The algorithm does not require integer programing. The authors ignore the need for communication rounds and synchronization between nodes. },
+	Author = {Koufogiannakis, Christos and Young, Neal E.},
+	Booktitle = {PODC '09: Proceedings of the 28th ACM symposium on Principles of distributed computing},
+	Date-Added = {2010-06-27 03:14:14 -0400},
+	Date-Modified = {2010-06-27 03:14:14 -0400},
+	Doi = {http://doi.acm.org/10.1145/1582716.1582746},
+	Isbn = {978-1-60558-396-9},
+	Keywords = {distributed covering, distributed vertex cover},
+	Location = {Calgary, AB, Canada},
+	Pages = {171--179},
+	Publisher = {ACM},
+	Title = {Distributed and parallel algorithms for weighted vertex cover and other covering problems},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAaoAAAAAAaoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRdwMTcxLWtvdWZvZ2lhbm5ha2lzLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYxGFxxWHHlBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAxxXNbgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgBATWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMTcxLWtvdWZvZ2lhbm5ha2lzLnBkZgAOADAAFwBwADEANwAxAC0AawBvAHUAZgBvAGcAaQBhAG4AbgBhAGsAaQBzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAzVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3AxNzEta291Zm9naWFubmFraXMucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxA0Li4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wMTcxLWtvdWZvZ2lhbm5ha2lzLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAJOAlACVQJeAmkCbQJ7AoICiwLCAscCygLXAtwAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC7g==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1582716.1582746}}
+
+@article{21723,
+	Abstract = {The problem of optimizing joins between two fragmented relations on a broadcast local network is analyzed. Data redundancy is considered. Semantic information associated with fragments are used to eliminate necessary processing. More than one physical copies of a fragment is allowed to be used in a strategy to achieve more parallelism. Join-analysis graphs are introduced to represent joins on two fragmented relations. The problem of optimizing a join is mapped into an equivalent problem of finding a minimum-weight vertex cover for the corresponding join-analysis graph. This problem is proved to be NP-hard. A four-phase approach for processing joins is proposed.},
+	Annote = {The fragmented database joining problem is show to be provably equivalent to minimum weighted vertex cover. This paper may be the first to prove that MWVC is NP complete. The algorithm described for MWVC is an optimization algorithm, not distributed.},
+	Author = {Chen, J.S.J. and Li, V.O.K.},
+	Date-Added = {2010-06-27 03:13:58 -0400},
+	Date-Modified = {2010-06-27 03:13:58 -0400},
+	Doi = {10.1109/32.21723},
+	Issn = {0098-5589},
+	Journal = {Software Engineering, IEEE Transactions on},
+	Keywords = {NP hardness;broadcast local network;fragmented database systems;join-analysis graph;minimum-weight vertex cover;parallelism;redundancy;relations;concurrency control;distributed databases;local area networks;relational databases;},
+	Month = {jan},
+	Number = {1},
+	Pages = {26 -38},
+	Title = {Optimizing joins in fragmented database systems on a broadcast local network},
+	Volume = {15},
+	Year = {1989},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXIAAAAAAXIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQkyMTcyMy5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASGSUyCF0NAAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyCGsdAAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgAyTWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzoyMTcyMy5wZGYADgAUAAkAMgAxADcAMgAzAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAlVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvLzIxNzIzLnBkZgAAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QJi4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vMjE3MjMucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAhYCGAIdAiYCMQI1AkMCSgJTAnwCgQKEApEClgAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAKo},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/32.21723}}
+
+@article{1525859,
+	Abstract = {In this article, we develop tractable mathematical models and approximate solution algorithms for a class of integer optimization problems with probabilistic and deterministic constraints, with applications to the design of distributed sensor networks that have limited connectivity. For a given deployment region size, we calculate the Pareto frontier of the sensor network utility at the desired probabilities for d-connectivity and k-coverage. As a result of our analysis, we determine (1) the number of sensors of different types to deploy from a sensor pool, which offers a cost vs. performance trade-off for each type of sensor, (2) the minimum required radio transmission ranges of the sensors to ensure connectivity, and (3) the lifetime of the sensor network. For generality, we consider randomly deployed sensor networks and formulate constrained optimization technique to obtain the localization performance. The approach is guided and validated using an unattended acoustic sensor network design. Finally, approximations of the complete statistical characterization of the acoustic sensor networks are given, which enable average network performance predictions of any combination of acoustic sensors.},
+	Address = {New York, NY, USA},
+	Annote = {This is an intensely confusing paper in which I was absolutely unable to find the branch-and-bound heuristic. However, it defines with great precision the problem of multiple criteria optimization for sensor networks, implying that it is very difficult to approach this problem using linear programming.},
+	Author = {Cevher, Volkan and Kaplan, Lance M.},
+	Date-Added = {2010-06-27 03:13:45 -0400},
+	Date-Modified = {2010-06-27 03:13:45 -0400},
+	Doi = {http://doi.acm.org/10.1145/1525856.1525859},
+	Issn = {1550-4859},
+	Journal = {ACM Trans. Sen. Netw.},
+	Keywords = {Bayesian experimental design, dynamic programming, sensor networks},
+	Number = {3},
+	Pages = {1--28},
+	Publisher = {ACM},
+	Title = {Acoustic sensor network design for position estimation},
+	Volume = {5},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYYAAAAAAYYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ5hMjEtY2V2aGVyLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASGPdyCFy/AAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyCGrPAAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA3TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzphMjEtY2V2aGVyLnBkZgAADgAeAA4AYQAyADEALQBjAGUAdgBoAGUAcgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9hMjEtY2V2aGVyLnBkZgATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxArLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9hMjEtY2V2aGVyLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIqAiwCMQI6AkUCSQJXAl4CZwKVApoCnQKqAq8AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACwQ==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1525856.1525859}}
+
+@article{1741522,
+	Abstract = {The next generation broadband access networks must provide high speed bidirectional data channels and support more concurrent subscribers than ever before. While mega-bits-per-second data rates have been demonstrated for the downlink channels, progress on uplink has been slow. We propose a hybrid architecture for CDMA uplink that seamlessly integrates short-range radio and WCDMA interfaces in the same network. In our scheme, mobile stations (subscribers) can operate as Relaying Mobile Terminal (RMT) to relay uplink traffic for nearby mobile stations. Our analysis and simulations show that the deployment of RMTs significantly reduces the radio transmissions in the CDMA uplink. Moreover, the scheme results in a much lower out-of-cell interference to the neighboring network cells. The problem of finding the optimum RMT set turns out to be NP-hard. Several heuristics are evaluated in terms of RMT size and out-of-cell interference. In particular, we investigated a novel vertex cover based heuristic algorithm. Our method uses mobile pilot signals and mobile location to estimate a interference function for each node. This function is then used in selecting a maximum matching for the candidate RMT set. Simulation results are somewhat surprising: the simple greedy algorithm has very close performance to that of the optimum algorithm when only the RMT size is concerned. When out-of-cell interference is considered, the proposed algorithm outperforms both greedy and 2-approximation algorithm.
+
+},
+	Address = {Hingham, MA, USA},
+	Annote = {The authors approach the problem of improving uplink rates for cell networks using wi-fi relays to reduce cell band interference. The problem of finding optimum relaying points is equivalent to the constrained weighted dominating set problem. The authors demonstrate through experiment that for networks with a specific minimum distance, the constrained weighted dominating set problem can be reduced to an weighted minimum vertex cover problem.
+
+The authors present a novel sequential heuristic for solving the MWVC problem that takes the specific weighting model of the cell network into account. They compare their algorithm to a greedy algorithm and a guaranteed 2 approximate MVC algorithm. A weakness of this paper is that a 2 approximate MWVC algorithm is not used as a baseline. 
+
+The pilot algorithm performs well, especially in the context of out of network interference.},
+	Author = {Wang, Ju and Liu, Jonathan C.},
+	Date-Added = {2010-06-27 03:13:21 -0400},
+	Date-Modified = {2010-06-27 03:13:21 -0400},
+	Doi = {http://dx.doi.org/10.1007/s11276-008-0106-5},
+	Issn = {1022-0038},
+	Journal = {Wirel. Netw.},
+	Keywords = {Out-cell-interference, Uplink relaying, Vertex cover, WCDMA, WLAN, Wireless network},
+	Number = {8},
+	Pages = {1113--1125},
+	Publisher = {Kluwer Academic Publishers},
+	Title = {Uplink relaying in hybrid wireless networks with out-of-cell interference reduction},
+	Volume = {15},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAbYAAAAAAbYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRoxMTI3Nl8yMDA4X0FydGljbGVfMTA2LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASGDxyCFs7gAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyCGlLgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgBDTWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzoxMTI3Nl8yMDA4X0FydGljbGVfMTA2LnBkZgAADgA2ABoAMQAxADIANwA2AF8AMgAwADAAOABfAEEAcgB0AGkAYwBsAGUAXwAxADAANgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIANlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby8xMTI3Nl8yMDA4X0FydGljbGVfMTA2LnBkZgATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxA3Li4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby8xMTI3Nl8yMDA4X0FydGljbGVfMTA2LnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAJaAlwCYQJqAnUCeQKHAo4ClwLRAtYC2QLmAusAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC/Q==},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s11276-008-0106-5}}
+
+@article{1464428,
+	Abstract = {One of the useful approaches to exploit redundancy in a sensor network is to keep active only a small subset of sensors that are sufficient to cover the region required to be monitored. The set of active sensors should also form a connected communication graph, so that they can autonomously respond to application queries and/or tasks. Such a set of active sensors is known as a connected sensor cover, and the problem of selecting a minimum connected sensor cover has been well studied when the transmission radius and sensing radius of each sensor is fixed. In this article, we address the problem of selecting a minimum energy-cost connected sensor cover, when each sensor node can vary its sensing and transmission radius; larger sensing or transmission radius entails higher energy cost.
+
+For the aforesaid problem, we design various centralized and distributed algorithms, and compare their performance through extensive experiments. One of the designed centralized algorithms (called CGA) is shown to perform within an O(log n) factor of the optimal solution, where n is the size of the network. We have also designed a localized algorithm based on Voronoi diagrams which is empirically shown to perform very close to CGA and, due to its communication-efficiency, results in significantly prolonging the network lifetime. We also extend the aforementioned algorithms to incorporate fault tolerance. In particular, we show how to extend the algorithms to address the minimum energy-cost connected sensor k-cover problem, in which every point in the query region needs to be covered by at least k distinct active sensors. The CGA preserves the approximation bound in this case. We also propose a localized topology control scheme to preserve k-connectivity, and use it to extend the Voronoi-based approach to computing a minimum energy-cost k1-connected k2-cover. We study the performance of our proposed algorithms through extensive simulations.},
+	Address = {New York, NY, USA},
+	Annote = {The authors examine the problem of prolonging network lifetime in a k-connected k-coverage network. They present algorithms and experimental data for these algorithms. Algorithms were analyzed using a custom simulator that employs and ideal (error free) communication model. 
+
+In the first approach, each node begins in an active state and constructs an {\em l} hop Voronoi diagram based on it's transmission and sensing radius. The information from each neighbor allows the node to construct a local Voronoi neighborhood and determine whether it should deactivate. 
+
+The second approach is a greedy algorithm for which both centralized and distributed versions are presented. The algorithm builds a solution by starting with a coverage area and then expanding the area by either adding sensors to the cover or increasing the sensing range of a sensor that is already in the cover. The distributed version works in a similar fashion, with the exception that it merges distributed covers. 
+
+Experimental results showed that all approaches provided improvements in network lifetime.  },
+	Author = {Zhou, Zongheng and Das, Samir R. and Gupta, Himanshu},
+	Date-Added = {2010-06-27 03:13:07 -0400},
+	Date-Modified = {2010-06-27 03:13:07 -0400},
+	Doi = {http://doi.acm.org/10.1145/1464420.1464428},
+	Issn = {1550-4859},
+	Journal = {ACM Trans. Sen. Netw.},
+	Keywords = {Topology control, connectivity, coverage, energy conservation, sensor networks},
+	Number = {1},
+	Pages = {1--36},
+	Publisher = {ACM},
+	Title = {Variable radii connected sensor cover in sensor networks},
+	Volume = {5},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXoAAAAAAXoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQthOC16aG91LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAASGMRyCFwMQAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyCGocQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA0TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzphOC16aG91LnBkZgAOABgACwBhADgALQB6AGgAbwB1AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAnVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL2E4LXpob3UucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAoLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9hOC16aG91LnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIeAiACJQIuAjkCPQJLAlICWwKGAosCjgKbAqAAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACsg==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1464420.1464428}}
+
+@article{1346629,
+	Abstract = {The major challenge in designing wireless sensor networks (WSNs) is the support of the functional, such as data latency, and the non-functional, such as data integrity, requirements while coping with the computation, energy and communication constraints. Careful node placement can be a very effective optimization means for achieving the desired design goals. In this paper, we report on the current state of the research on optimized node placement in WSNs. We highlight the issues, identify the various objectives and enumerate the different models and formulations. We categorize the placement strategies into static and dynamic depending on whether the optimization is performed at the time of deployment or while the network is operational, respectively. We further classify the published techniques based on the role that the node plays in the network and the primary performance objective considered. The paper also highlights open problems in this area of research.},
+	Address = {Amsterdam, The Netherlands, The Netherlands},
+	Annote = {Deep literature review that covers issues in static and dynamic node positioning in sensor networks. Issues include positioning to maximize coverage, maximize lifetime, maximize communication, and positioning according to role. Strategies for dynamic placement are discussed as well. 
+
+Two open questions are discussed. The first is repositioning of multiple nodes in a coordinated fashion. The challenges of this problem are related to the difficulty of solving graph optimization problems (such as weighted vertex cover) in a distributed system. The second problem is extending work in two dimensional maps to a three dimensional case.},
+	Author = {Younis, Mohamed and Akkaya, Kemal},
+	Date-Added = {2010-06-27 03:12:52 -0400},
+	Date-Modified = {2010-06-27 03:12:52 -0400},
+	Doi = {http://dx.doi.org/10.1016/j.adhoc.2007.05.003},
+	Issn = {1570-8705},
+	Journal = {Ad Hoc Netw.},
+	Keywords = {Algorithms, Design, Management, wireless ad hoc networks, wireless sensor network, sensor networks},
+	Number = {4},
+	Pages = {621--655},
+	Publisher = {Elsevier Science Publishers B. V.},
+	Title = {Strategies and techniques for node placement in wireless sensor networks: A survey},
+	Volume = {6},
+	Year = {2008},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZoAAAAAAZoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRMxMC4xLjEuMTE0LjM4NDQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAW+L6yCFuYlBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyCGmogAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA8TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzoxMC4xLjEuMTE0LjM4NDQucGRmAA4AKAATADEAMAAuADEALgAxAC4AMQAxADQALgAzADgANAA0AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAvVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvLzEwLjEuMS4xMTQuMzg0NC5wZGYAABMAAS8AABUAAgAL//8AAIAF0hwdHh9YJGNsYXNzZXNaJGNsYXNzbmFtZaMfICFdTlNNdXRhYmxlRGF0YVZOU0RhdGFYTlNPYmplY3RfEDAuLi8uLi8uLi8uLi9Eb2N1bWVudHMvQmlibGlvLzEwLjEuMS4xMTQuMzg0NC5wZGbSHB0kJaIlIVxOU0RpY3Rpb25hcnkSAAGGoF8QD05TS2V5ZWRBcmNoaXZlcgAIABEAFgAfACgAMgA1ADoAPABFAEsAUgBdAGUAbABvAHEAcwB2AHgAegB8AIYAkwCYAKACPgJAAkUCTgJZAl0CawJyAnsCrgKzArYCwwLIAAAAAAAAAgEAAAAAAAAAKAAAAAAAAAAAAAAAAAAAAto=},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1016/j.adhoc.2007.05.003}}
 
 @article{Sol:2006uq,
 	Abstract = {Here, we represent protein structures as residue interacting networks, which are assumed to involve a permanent flow of information between amino acids. By removal of nodes from the protein network, we identify fold centrally conserved residues, which are crucial for sustaining the shortest pathways and thus play key roles in long-range interactions. Analysis of seven protein families (myoglobins, G-protein-coupled receptors, the trypsin class of serine proteases, hemoglobins, oligosaccharide phosphorylases, nuclear receptor ligand-binding domains and retroviral proteases) confirms that experimentally many of these residues are important for allosteric communication. The agreement between the centrally conserved residues, which are key in preserving short path lengths, and residues experimentally suggested to mediate signaling further illustrates that topology plays an important role in network communication. Protein folds have evolved under constraints imposed by function. To maintain function, protein structures need to be robust to mutational events. On the other hand, robustness is accompanied by an extreme sensitivity at some crucial sites. Thus, here we propose that centrally conserved residues, whose removal increases the characteristic path length in protein networks, may relate to the system fragility.},
