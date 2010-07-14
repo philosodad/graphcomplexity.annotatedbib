@@ -2,12 +2,225 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for John Daigle at 2010-07-03 14:08:13 -0400 
+%% Created for John Daigle at 2010-07-11 22:30:45 -0400 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
 
 
+
+@inproceedings{1498475,
+	Abstract = { A critical aspect of applications with wireless sensor networks is network lifetime. Power-constrained wireless sensor networks are usable as long as they can communicate sensed data to a processing node. Sensing and communications consume energy, therefore judicious power management and sensor scheduling can effectively extend network lifetime. To cover a set of targets with known locations when ground access in the remote area is prohibited, one solution is to deploy the sensors remotely, from an aircraft. The lack of precise sensor placement is compensated by a large sensor population deployed in the drop zone, that would improve the probability of target coverage. The data collected from the sensors is sent to a central node (e.g. cluster head) for processing. In this paper we propose un efficient method to extend the sensor network life time by organizing the sensors into a maximal number of set covers that are activated successively. Only the sensors from the current active set are responsible for monitoring all targets and for transmitting the collected data, while all other nodes are in a low-energy sleep mode. By allowing sensors to participate in multiple sets, our problem formulation increases the network lifetime compared with related work [M. Cardei et al], that has the additional requirements of sensor sets being disjoint and operating equal time intervals. In this paper we model the solution as the maximum set covers problem and design two heuristics that efficiently compute the sets, using linear programming and a greedy approach. Simulation results are presented to verify our approaches.},
+	Annote = {Foundational paper in sensor network lifetimes. Introduces the idea of dividing the network into non-disjoint sets and shows that this is a more effective way to observe the network. The paper proposes the Maximum Set Covers (MSC) problem as an abstraction of the target coverage problem in Sensor Networks. 
+
+The authors demonstrate that MSC is NP-Complete and that non-disjoint set covers, as used in MSC, are superior to disjoint set covers as in previous work. They produce an optimization version of the problem and a LP to solve it. They also present a much simpler greedy heuristic. Greedy performance versus LP degrades as the number of targets increases. 
+
+Both Greedy and LP approaches are sequential algorithms, run from a central location.},
+	Author = {Cardei, M. and Thai, M.T. and Yingshu Li and Weili Wu},
+	Bdsk-Color = {3439290111},
+	Booktitle = {INFOCOM 2005. 24th Annual Joint Conference of the IEEE Computer and Communications Societies. Proceedings IEEE},
+	Date-Added = {2010-07-11 18:51:48 -0400},
+	Date-Modified = {2010-07-11 18:51:48 -0400},
+	Doi = {10.1109/INFCOM.2005.1498475},
+	Issn = {0743-166X},
+	Keywords = {energy consumption; greedy approach; heuristics design; linear programming; network lifetime; power management; power-constrained wireless sensor networks; sensor scheduling; greedy algorithms; linear programming; wireless sensor networks;},
+	Month = {13-17},
+	Pages = {1976 - 1984 vol. 3},
+	Title = {Energy-efficient target coverage in wireless sensor networks},
+	Volume = {3},
+	Year = {2005},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXoAAAAAAXoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQsxNDk4NDc1LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAbADwyF9cvVBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyF+U/QAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA0TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzoxNDk4NDc1LnBkZgAOABgACwAxADQAOQA4ADQANwA1AC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAnVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvLzE0OTg0NzUucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAoLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby8xNDk4NDc1LnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIeAiACJQIuAjkCPQJLAlICWwKGAosCjgKbAqAAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACsg==},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/INFCOM.2005.1498475}}
+
+@inproceedings{4697802,
+	Abstract = {The nodes of wireless sensor networks (WSNs) have the dual function of gathering information and relaying it to a central collection point, the sink. For the latter function the key is connectivity involving paths over which data is passed from node to node to the sink. We derive connectivity, as expressed by the probability that a node lies on a path to the sink, as a function of the probability that adjacent cells in a grid are connected. This result is then applied to the typical scenario where nodes are randomly scattered throughout the area being monitored. Useful upper and lower bounds for the probability of adjacent cells being connected are derived as a function of the node density in a cell. For battery powered nodes, lifetime is an important factor. The effect of the demise of nodes on the nodal density and, in turn, on network connectivity is quantified.},
+	Annote = {Continuous equations for lifetime analysis. The network structure seems somewhat arbitrary, but overall, the relationship between network density and network connectivity lifetime is fleshed out. },
+	Author = {Legakis, H. and Mehmet-Ali, M. and Hayes, J.F.},
+	Bdsk-Color = {3439290111},
+	Booktitle = {Global Telecommunications Conference, 2008. IEEE GLOBECOM 2008. IEEE},
+	Date-Added = {2010-07-11 18:04:19 -0400},
+	Date-Modified = {2010-07-11 18:04:56 -0400},
+	Doi = {10.1109/GLOCOM.2008.ECP.27},
+	Issn = {1930-529X},
+	Keywords = {WSN nodes;battery powered nodes;information gathering;lifetime analysis;network connectivity;nodal density;probability;wireless sensor networks;probability;telecommunication network reliability;wireless sensor networks;},
+	Month = {nov.},
+	Pages = {1 -6},
+	Title = {Lifetime Analysis for Wireless Sensor Networks},
+	Year = {2008},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/GLOCOM.2008.ECP.27},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXoAAAAAAXoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQs0Njk3ODAyLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa2hvyF9XJgAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyF+PZgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA0TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzo0Njk3ODAyLnBkZgAOABgACwA0ADYAOQA3ADgAMAAyAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAnVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvLzQ2OTc4MDIucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAoLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby80Njk3ODAyLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIeAiACJQIuAjkCPQJLAlICWwKGAosCjgKbAqAAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACsg==}}
+
+@inproceedings{5425300,
+	Abstract = {The target coverage problem is one of the most fundamental challenges in wireless sensor networks. Due to the complexity of the problem (time-dependent network topology and coverage constraints), previous studies have mainly focused on heuristic algorithms and the theoretical bound remains unknown. In this paper, we aim to fill in this gap by providing fundamental results. First, we investigate the properties of a problem in time domain via an example topology and build a novel transformation to connect a problem in the time domain with a corresponding problem in the space domain while maintaining the same network lifetime. Based on this transformation, we mathematically formulate the problem and build a column-generation based algorithm, which decomposes the original formulation into two sub-formulations and iteratively solves them in a way that approaches the optimal solution. We prove that the network lifetime that can be guaranteed by the proposed algorithm is at least (1-{\^A}¿) of the optimum, where {\^A}¿ can be made arbitrarily small depending on the required precision.},
+	Annote = {This paper formalizes some concepts in Target Coverage. One such concept is {\em discrete time}. When studying target coverage lifetimes, time is usually considered in discrete blocks based on the lifetime of different sensors. In this paper, the authors justify this convenient simplification.
+
+The upper bound for the network lifetime problem is formally presented, allowing the authors to claim that their algorithm produces results that are a constant approximation of the optimal network lifetime.},
+	Author = {Yu Gu and Yusheng Ji and Jie Li and Baohua Zhao},
+	Bdsk-Color = {3439290111},
+	Booktitle = {Global Telecommunications Conference, 2009. GLOBECOM 2009. IEEE},
+	Date-Added = {2010-07-11 16:20:20 -0400},
+	Date-Modified = {2010-07-11 16:20:20 -0400},
+	Doi = {10.1109/GLOCOM.2009.5425300},
+	Issn = {1930-529X},
+	Keywords = {column-generation based algorithm;coverage constraints;target coverage problem;time-dependent network topology;wireless sensor networks;telecommunication network topology;wireless sensor networks;},
+	Month = {nov.},
+	Pages = {1 -6},
+	Title = {Fundamental Results on Target Coverage Problem in Wireless Sensor Networks},
+	Year = {2009},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/GLOCOM.2009.5425300},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAXoAAAAAAXoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQs1NDI1MzAwLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa2lYyF9YWQAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyF+QmQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA0TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzo1NDI1MzAwLnBkZgAOABgACwA1ADQAMgA1ADMAMAAwAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAnVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvLzU0MjUzMDAucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAoLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby81NDI1MzAwLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIeAiACJQIuAjkCPQJLAlICWwKGAosCjgKbAqAAAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACsg==}}
+
+@article{1514028,
+	Abstract = {In this paper, we consider the connected target coverage (CTC) problem with the objective of maximizing the network lifetime by scheduling sensors into multiple sets, each of which can maintain both target coverage and connectivity among all the active sensors and the sink.We model the CTC problem as a maximum cover tree (MCT) problem and prove that the MCT problem is NP-Complete. We determine an upper bound on the network lifetime for the MCT problem and then develop a (1+w) H (M) approximation algorithm to solve it, where is an arbitrarily small number, H(M) = Σ1≤i≤M (1/i) and M is the maximum number of targets in the sensing area of any sensor. As the protocol cost of the approximation algorithm may be high in practice, we develop a faster heuristic algorithm based on the approximation algorithm called Communication Weighted Greedy Cover (CWGC) algorithm and present a distributed implementation of the heuristic algorithm. We study the performance of the approximation algorithm and CWGC algorithm by comparing them with the lifetime upper bound and other basic algorithms that consider the coverage and connectivity problems independently. Simulation results show that the approximation algorithm and CWGC algorithm perform much better than others in terms of the network lifetime and the performance improvement can be up to 45% than the best-known basic algorithm. The lifetime obtained by our algorithms is close to the upper bound. Compared with the approximation algorithm, the CWGC algorithm can achieve a similar performance in terms of the network lifetime with a lower protocol cost.},
+	Address = {Piscataway, NJ, USA},
+	Annote = {This paper examines the problem of Connected Target Coverage. In most of the literature, communication routes and costs from a node to a sink are ignored. Routing is ignored because a sensor network can be assumed to be connected if the communication distance is double the sensing distance. Communication costs are ignored for this same reason, on the assumption that all active nodes will be spending approximately the same amount of energy in communication.
+
+The authors formally model a Target Coverage problem without these assumptions. The problem is defined as the Maximum Cover Tree Problem: Given a Graph $G(V,E)$, where V is the set of sensors, targets and a single sink, and E is the set of communication links and sensing links, find a family of {\em cover trees} ${\mathcal T}_{\tau_1}, {\mathcal T}_{\tau_2}, ... {\mathcal T}_{\tau_x}$ and time intervals $\tau_1, \tau_2,...,\tau_x$ such that  the network lifetime is maximized.
+
+This problem is shown to be NP-Complete by reduction from 3SAT. Upper bounds are defined using linear programming, and a greedy heuristic is presented to solve the problem. The authors claim that the greedy algorithm can be easily distributed, but no analysis of distributed performance or distributed algorithm is presented.},
+	Author = {Zhao, Qun and Gurusamy, Mohan},
+	Date-Added = {2010-07-11 10:59:13 -0400},
+	Date-Modified = {2010-07-11 10:59:13 -0400},
+	Doi = {http://dx.doi.org/10.1109/TNET.2007.911432},
+	Issn = {1063-6692},
+	Journal = {IEEE/ACM Trans. Netw.},
+	Keywords = {NP-complete, approximation algorithms, coverage, network lifetime, sensor activity scheduling, wireless sensor networkss},
+	Number = {6},
+	Pages = {1378--1391},
+	Publisher = {IEEE Press},
+	Title = {Lifetime maximization for connected target coverage in wireless sensor networks},
+	Volume = {16},
+	Year = {2008},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYYAAAAAAYYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ5wMTM3OC16aGFvLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARKzYyBbwxwAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyBcpBwAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA3TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMTM3OC16aGFvLnBkZgAADgAeAA4AcAAxADMANwA4AC0AegBoAGEAbwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9wMTM3OC16aGFvLnBkZgATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxArLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wMTM3OC16aGFvLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIqAiwCMQI6AkUCSQJXAl4CZwKVApoCnQKqAq8AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACwQ==},
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/TNET.2007.911432}}
+
+@inproceedings{1555289,
+	Abstract = {To execute large scale applications exploiting the unemployed aggregated power available on grid nodes, effective and efficient mapping algorithms must be designed. Since the problem of optimally mapping is NP--complete, heuristic techniques can be profitably adopted to find near--optimal solutions. Here a multiobjective Differential Evolution algorithm is implemented and tested on different mapping scenarios with the aim to fulfill several optimization criteria. The results attained show the robustness of the evolutionary approach proposed in dealing with multisite grid mapping.},
+	Address = {New York, NY, USA},
+	Annote = {The authors present a Differential Evolution Algorithm with multiple objectives to solve the Mapping Problem in grid computing. The Mapping problem is not clearly defined in the paper, but in essence the problem is this: Given some collection of tasks, and a collection of resources, what is the optimal mapping of tasks to resources?
+
+In a homogenous system with static resources, the Mapping Problem is known to be NP-complete. The heterogenous and dynamic case of the problem is therefore NP-Hard. 
+
+Differential Evolution is defined as an optimization algorithm specifically geared towards some minimization problem: Given a problem with $q$ real parameters, the algorithm generates a population of {$\mathcal M$} individuals with $q$ values. In each generation, the population is modified according to either a binomial or exponential scheme. 
+
+In this paper, the authors propose a DE algorithm that attempts to optimize on 2 parameters. Optimization is evaluated using Paretto Sets, which are defined in Section 3.2.2.
+
+Several experiments are run in simulation to show that the algoritm produces results at all. However, given the state of the art, the authors found no algorithms to compare their own to, so the results are more of interest in that they prove the algorithm to be feasible.},
+	Author = {De Falco, Ivanoe and Maisto, Domenico and Scafuri, Umberto and Tarantino, Ernesto and Della Cioppa, Antonio},
+	Bdsk-Color = {3439290111},
+	Booktitle = {BADS '09: Proceedings of the 2009 workshop on Bio-inspired algorithms for distributed systems},
+	Date-Added = {2010-07-10 02:08:52 -0400},
+	Date-Modified = {2010-07-10 02:08:52 -0400},
+	Doi = {http://doi.acm.org/10.1145/1555284.1555289},
+	Isbn = {978-1-60558-584-0},
+	Keywords = {computational grids, differential evolution, multiobjective optimization, multisite mapping},
+	Location = {Barcelona, Spain},
+	Pages = {27--36},
+	Publisher = {ACM},
+	Title = {An innovative perspective on mapping in grids},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYoAAAAAAYoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ9wMjctZGVmYWxjby5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYUtWyE1KhQAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyE2CxQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA4TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMjctZGVmYWxjby5wZGYADgAgAA8AcAAyADcALQBkAGUAZgBhAGwAYwBvAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgArVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3AyNy1kZWZhbGNvLnBkZgAAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QLC4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vcDI3LWRlZmFsY28ucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAi4CMAI1Aj4CSQJNAlsCYgJrApoCnwKiAq8CtAAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALG},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1555284.1555289}}
+
+@inproceedings{1555288,
+	Abstract = {Biological systems surpass man-made systems in many important ways. Most notably, systems found in nature are typically self-adaptive and self-managing, capable of surviving drastic changes in their environments, such as internal failures and malicious attacks on their components. Large distributed software systems have requirements common to those of some biological systems, particularly in the number and power of individual components and in the qualities of service of the system. However, it is not immediately clear how engineers can extract useful properties from natural systems and inject them into software systems.
+
+In this paper, we explore the nature's process of crystal growth and develop mechanisms inspired by that process for designing large distributed computational grid systems. The result is the tile architectural style, a set of design principles for building distributed software systems that solve complex computational problems. Systems developed using the tile style scale well to large computations, tolerate faults and malicious attacks, and preserve the privacy of the data.},
+	Address = {New York, NY, USA},
+	Annote = {Overview paper that starts out talking about termite mounds and awkwardly transitions into crystals.
+
+The actual substance of the paper is the design of an architecture for computation on desktop grid systems called the tile architectural style. Tile architecture, conceptually, computes by creating tiles of 4 sides that encode some set of rules. The tiles can join together as a result of these rules. Given a seed that represents the problem, random attachment of tiles should result in a correct solution if the attachment rules of the system are correct.
+
+In the case of a distributed computer, each node can deploy or recruit tiles to build solutions independently. Because tiles are relatively lightweight, this is anticipated to be an efficient model for sampling exponential space.},
+	Author = {Brun, Yuriy and Medvidovic, Nenad},
+	Bdsk-Color = {3439290111},
+	Booktitle = {BADS '09: Proceedings of the 2009 workshop on Bio-inspired algorithms for distributed systems},
+	Date-Added = {2010-07-10 00:21:37 -0400},
+	Date-Modified = {2010-07-10 00:21:37 -0400},
+	Doi = {http://doi.acm.org/10.1145/1555284.1555288},
+	Isbn = {978-1-60558-584-0},
+	Keywords = {computational grid, fault tolerance, nature-inspired software, privacy, self-assembly, software architectural style},
+	Location = {Barcelona, Spain},
+	Pages = {19--26},
+	Publisher = {ACM},
+	Title = {Crystal-growth-inspired algorithms for computational grids},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAX4AAAAAAX4AAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQxwMTktYnJ1bi5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYUuFyE1K0gAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyE2DEgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA1TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMTktYnJ1bi5wZGYAAA4AGgAMAHAAMQA5AC0AYgByAHUAbgAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKFVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9wMTktYnJ1bi5wZGYAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QKS4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vcDE5LWJydW4ucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAiICJAIpAjICPQJBAk8CVgJfAosCkAKTAqACpQAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAAK3},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1555284.1555288}}
+
+@inproceedings{1555287,
+	Abstract = {The cornerstone of successful deployment of large scale grid systems depends on efficient resource discovery mechanisms. In this respect, this paper presents a grid information system supported by a self-structured overlay topology and proactive information caching. The proposed approach features an ant-inspired self-organized overlay construction that maintains a bounded diameter overlay, and a selective flooding based discovery algorithm that exploit local caches to reduce the number of visited nodes. The caches are periodically exchanged between neighboring nodes using an epidemic replication mechanism that is based on a gossiping algorithm, thus allowing nodes to have a more general view of the network and its resources. We conducted extensive experimentation that provides evidence that the average number of hops required to efficiently locate resources is limited and that our framework performs well with respect to hit rate and network overhead.},
+	Address = {New York, NY, USA},
+	Annote = {This is an ant optimization algorithm. In this case, the goal is to effieciently maintain resource allocation in a distributed desktop grid computer. A desktop grid refers to a distributed system in which heterogenous computers in various locations complete tasks using spare resources. 
+
+By creating a number of species of 'ants' that crawl the network, this algorithm self organizes an overlay network with a small diameter. The 'ant' agents maintain information about the nodes that they have visited and pass that information to each node that they visit. In this way, nodes learn about resources that are available on the network. Other species of ant maintain meta-network links by building links, optimizing links, disconnecting, and checking for connectivity. 
+
+The overall algorithm performs well against a previous incarnation of itself. The authors did not test their algorithm against other work in this paper.},
+	Author = {Brocco, Amos and Malatras, Apostolos and Hirsbrunner, B\'{e}at},
+	Bdsk-Color = {3439290111},
+	Booktitle = {BADS '09: Proceedings of the 2009 workshop on Bio-inspired algorithms for distributed systems},
+	Date-Added = {2010-07-09 22:18:58 -0400},
+	Date-Modified = {2010-07-09 22:18:58 -0400},
+	Doi = {http://doi.acm.org/10.1145/1555284.1555287},
+	Isbn = {978-1-60558-584-0},
+	Keywords = {collaborative ant algorithms, grid computing, overlay networks, resource discovery},
+	Location = {Barcelona, Spain},
+	Pages = {11--18},
+	Publisher = {ACM},
+	Title = {Proactive information caching for efficient resource discovery in a self-structured grid},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYYAAAAAAYYAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ5wMTEtYnJvY2NvLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAauYvyE1LIlBERiAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyE2DYgAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA3TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMTEtYnJvY2NvLnBkZgAADgAeAA4AcAAxADEALQBiAHIAbwBjAGMAbwAuAHAAZABmAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAKlVzZXJzL3BhdWwvRG9jdW1lbnRzL0JpYmxpby9wMTEtYnJvY2NvLnBkZgATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxArLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wMTEtYnJvY2NvLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAIqAiwCMQI6AkUCSQJXAl4CZwKVApoCnQKqAq8AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAACwQ==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1555284.1555287}}
+
+@inproceedings{1555286,
+	Abstract = {Evolutionary Algorithms (EAs), and particularly Genetic Programming (GP), are techniques frequently employed to solve difficult real-life problems, which can require up to days or months of computation. One approach to reduce the time to solution is to use parallel computing on distributed platforms. Distributed platforms are prone to failures, and when these platforms are large and/or low-cost, failures are expected events rather than catastrophic exceptions. Therefore, fault tolerance and recovery techniques often become necessary. It turns out that Parallel GP (PGP) applications have an inherent ability to tolerate failures. This ability is quantified via simulation experiments performed using failure traces from real-world distributed platforms, namely, desktop grids (DGs), for two well-known GP problems. A simple technique is then proposed by which PGP applications can better tolerate the different, and often high, failures rates seen in different platforms.},
+	Address = {New York, NY, USA},
+	Annote = {Exactly what it sounds like. The authors itemize the various types of fault tolerance and construct simulations of Master/Slave parallel genetic programming in a distributed (Desktop Grid) environment. 
+
+A Desktop Grid differs from a cluster in that the desktop grid consists of independent machines that will make spare CPU cycles available to the central computer, while a cluster is a group of computers connected together to function as a single computer.
+
+The authors simulated the failure of nodes over time. What was discovered was that without any fault tolerance at all, the structure of PGP provided graceful fault tolerance. The system performance degraded over time, but the system continued to function smoothly as the various nodes dropped out.
+
+},
+	Author = {Lombra\, {n}a Gonz\'{a}lez, Daniel and Fern\'{a}ndez de Vega, Francisco and Casanova, Henri},
+	Bdsk-Color = {3439290111},
+	Booktitle = {BADS '09: Proceedings of the 2009 workshop on Bio-inspired algorithms for distributed systems},
+	Date-Added = {2010-07-09 15:58:17 -0400},
+	Date-Modified = {2010-07-09 15:58:17 -0400},
+	Doi = {http://doi.acm.org/10.1145/1555284.1555286},
+	Isbn = {978-1-60558-584-0},
+	Keywords = {desktop grids., fault-tolerance, parallel genetic programming},
+	Location = {Barcelona, Spain},
+	Pages = {1--10},
+	Publisher = {ACM},
+	Title = {Characterizing fault tolerance in genetic programming},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAYoAAAAAAYoAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oQ9wMS1sb21icmFuYS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYUvXyE1LbwAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyE2DrwAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA4TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwMS1sb21icmFuYS5wZGYADgAgAA8AcAAxAC0AbABvAG0AYgByAGEAbgBhAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgArVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3AxLWxvbWJyYW5hLnBkZgAAEwABLwAAFQACAAv//wAAgAXSHB0eH1gkY2xhc3Nlc1okY2xhc3NuYW1lox8gIV1OU011dGFibGVEYXRhVk5TRGF0YVhOU09iamVjdF8QLC4uLy4uLy4uLy4uL0RvY3VtZW50cy9CaWJsaW8vcDEtbG9tYnJhbmEucGRm0hwdJCWiJSFcTlNEaWN0aW9uYXJ5EgABhqBfEA9OU0tleWVkQXJjaGl2ZXIACAARABYAHwAoADIANQA6ADwARQBLAFIAXQBlAGwAbwBxAHMAdgB4AHoAfACGAJMAmACgAi4CMAI1Aj4CSQJNAlsCYgJrApoCnwKiAq8CtAAAAAAAAAIBAAAAAAAAACgAAAAAAAAAAAAAAAAAAALG},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1555284.1555286}}
+
+@inproceedings{1555300,
+	Abstract = {Cryptography based on Elliptic Curves (ECC) has emerged as an effective alternative to the existing public-key cryptosystems (RSA and DSA). Its success was due both to the fact that no fast algorithms were known to break it and that exceptional security levels could be obtained by using short keys. The Elliptic Curve Discrete Logarithm (ECDL) problem is the cornerstone of much of present-day ECCs. It was classifed as a computationally intractable problem and, consequently, as a reliable and unbreakable cryptosystem. In a recent work, Li et al. built a molecular computer designed to solve it over GF(2n). It was based on two DNA-inspired al gorithms: a parallel adder and a parallel multiplier, working in O(n) and O(n2) respectively, where n is the input size. In this paper, we first present two faster biological implementations, working in O(log(n)) and O(n * log(n))respectively (worst case). Then, we propose our model as a reference parallel solution of the ECDL problem and finally we highlight the computational power of such natureinspired paradigm.
+
+},
+	Address = {New York, NY, USA},
+	Annote = {The core of this paper is the development of three new modules for DNA computation. These seem to be basically equivalent to circuits in traditional computing, consisting of a new design for a DNA adder, multiplyer, and shifter. While the DNA algorithms are new, the basic ideas--such as employing XOR to add binary numbers--are the same ideas used in traditional architecture.
+
+The power of DNA computing is demonstrated by using these components to break an NP-complete problem with an exact solution using log(n) test tubes (processors). },
+	Author = {Iaccarino, Gennaro and Mazza, Tommaso},
+	Bdsk-Color = {1728040191},
+	Booktitle = {BADS '09: Proceedings of the 2009 workshop on Bio-inspired algorithms for distributed systems},
+	Date-Added = {2010-07-09 11:48:04 -0400},
+	Date-Modified = {2010-07-09 11:48:04 -0400},
+	Doi = {http://doi.acm.org/10.1145/1555284.1555300},
+	Isbn = {978-1-60558-584-0},
+	Keywords = {dna computing, elliptic curve discrete logarithm, parallel computations},
+	Location = {Barcelona, Spain},
+	Pages = {95--104},
+	Publisher = {ACM},
+	Title = {Fastest parallel molecular algorithms for the elliptic curve discrete logarithm problem over GF(2n)},
+	Year = {2009},
+	Bdsk-File-1 = {YnBsaXN0MDDUAQIDBAUIJidUJHRvcFgkb2JqZWN0c1gkdmVyc2lvblkkYXJjaGl2ZXLRBgdUcm9vdIABqAkKFRYXGyIjVSRudWxs0wsMDQ4RFFpOUy5vYmplY3RzV05TLmtleXNWJGNsYXNzog8QgASABqISE4ACgAOAB1lhbGlhc0RhdGFccmVsYXRpdmVQYXRo0hgNGRpXTlMuZGF0YU8RAZIAAAAAAZIAAgAADE1hY2ludG9zaCBIRAAAAAAAAAAAAAAAAAAAAMarQ7ZIKwAAAAl6oRFwOTUtaWFjY2FyaW5vLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYUfMyE1GHQAAAAAAAAAAAAQAAwAACSAAAAAAAAAAAAAAAAAAAAAGQmlibGlvABAACAAAxqt79gAAABEACAAAyE1+XQAAAAEAEAAJeqEACXoTAAiZSgAAkOcAAgA6TWFjaW50b3NoIEhEOlVzZXJzOnBhdWw6RG9jdW1lbnRzOkJpYmxpbzpwOTUtaWFjY2FyaW5vLnBkZgAOACQAEQBwADkANQAtAGkAYQBjAGMAYQByAGkAbgBvAC4AcABkAGYADwAaAAwATQBhAGMAaQBuAHQAbwBzAGgAIABIAEQAEgAtVXNlcnMvcGF1bC9Eb2N1bWVudHMvQmlibGlvL3A5NS1pYWNjYXJpbm8ucGRmAAATAAEvAAAVAAIAC///AACABdIcHR4fWCRjbGFzc2VzWiRjbGFzc25hbWWjHyAhXU5TTXV0YWJsZURhdGFWTlNEYXRhWE5TT2JqZWN0XxAuLi4vLi4vLi4vLi4vRG9jdW1lbnRzL0JpYmxpby9wOTUtaWFjY2FyaW5vLnBkZtIcHSQloiUhXE5TRGljdGlvbmFyeRIAAYagXxAPTlNLZXllZEFyY2hpdmVyAAgAEQAWAB8AKAAyADUAOgA8AEUASwBSAF0AZQBsAG8AcQBzAHYAeAB6AHwAhgCTAJgAoAI2AjgCPQJGAlECVQJjAmoCcwKkAqkCrAK5Ar4AAAAAAAACAQAAAAAAAAAoAAAAAAAAAAAAAAAAAAAC0A==},
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/1555284.1555300}}
 
 @article{mitchell06,
 	Abstract = {In this article, I discuss some recent ideas in complex systems on the topic of networks, contained in or inspired by three recent complex systems books. The general science of networks is the subject of Albert-Lazlo Barabasi's Linked [A.-L. Barabasi, Linked: The New Science of Networks, Perseus, New York, 2002] and Duncan Watts' Six Degrees [D. Watts, Six Degrees: The Science of a Connected Age, Gardner's Books, New York, 2003]. Commonalities among complex biological networks, e.g., immune systems, social insects, and cellular metabolism, and their relation to intelligence in computational systems are explored in the proceedings of a interdisciplinary conference on "Distributed Autonomous Systems" [L.A. Segel, I.R. Cohen (Eds.), Design Principles for the Immune System and Other Distributed Autonomous Systems, Oxford University Press, New York, 2001].The ideas discussed in the third book have led to me to propose four general principles of adaptive information processing in decentralized systems. These principles, and the relevance of "network thinking" for artificial intelligence (and vice versa), are the subject of the last two sections of the article.},
